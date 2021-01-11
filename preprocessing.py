@@ -21,7 +21,7 @@ with open("../mlchallenge_set_2021.tsv", encoding="latin-1") as tsvfile:
     items = list()
     for line in tsvreader:            
         try:
-            description = line[3]
+            description = line[3][1:-1]
 
             attribs = {}
             attribs["index"] = line[4]
